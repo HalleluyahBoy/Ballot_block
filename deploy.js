@@ -1,12 +1,9 @@
 const { ethers } = require("hardhat");
-
 const fs = require("fs");
 
 async function main() {
-  // Get the contract factory
+  // Compile the contract
   const Ballot = await ethers.getContractFactory("Ballot");
-
-  // Deploy the contract
   const ballot = await Ballot.deploy();
 
   // Wait for the contract to be mined
