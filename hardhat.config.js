@@ -6,4 +6,9 @@ module.exports = {
   networks: {
     hardhat: {},
   },
+  networks: {
+    localhost: {
+      url: "http://localhost:8545",
+    },
+  },
 };

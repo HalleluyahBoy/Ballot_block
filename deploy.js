@@ -4,7 +4,7 @@ const fs = require("fs");
 async function main() {
   // Compile the contract
   const Ballot = await ethers.getContractFactory("Ballot");
-  const ballot = await Ballot.deploy();
+  const ballot = await Ballot.deploy(["Alice", "Bob", "Charlie"]);
 
   // Wait for the contract to be mined
   await ballot.deployed();

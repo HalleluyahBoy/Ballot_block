@@ -4,5 +4,14 @@
   },
   "dependencies": {
     "ethers": "^6.3.0"
-  }
+  },
+  "name": "ballot_block",
+  "description": "A voing system using blockchain technology",
+  "version": "1.0.0",
+  "main": "compile.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Evidence",
+  "license": "MIT"
 }
